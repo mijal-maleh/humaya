@@ -1,0 +1,48 @@
+*{
+    margin:0; 
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+.body{
+    background-image:url(IMAGENES/Central/imagenCentral.png);
+    background-size:cover;
+    padding: 30px;
+}
+.body p{
+    margin-bottom: 10px;
+}
+.header-cel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+ul {
+    display: none;
+}
+.principal{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    }
+    .principal h1{
+        margin-bottom: 20px;
+    }
+    .principal p{
+        margin-bottom: 20px;
+    }
+    .principal button{
+        margin-bottom: 20px;
+        max-width: 30%;
+        height: 25px;
+        align-items: center;
+    }
+
+    .imagenProducto{
+        width: 60%;
+    }
+
+
+
+
