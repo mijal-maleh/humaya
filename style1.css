@@ -17,6 +17,12 @@
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+.menu-hamburguer{
+    color: darksalmon;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
 ul {
     display: none;
@@ -25,9 +31,12 @@ ul {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    color: white;
+    text-align: center;
     }
     .principal h1{
         margin-bottom: 20px;
+       /* text-align: center;*/
     }
     .principal p{
         margin-bottom: 20px;
@@ -35,8 +44,15 @@ ul {
     .principal button{
         margin-bottom: 20px;
         width: max-content;
-    padding: 10px 15px;
-    align-self:flex-end ;
+        padding: 15px 20px;
+        align-self:center; /*flex-end para dekstop;*/
+        border-radius: 25px; 
+        background-color:black;
+        opacity: 40%;
+        color: white;
+        font-size: medium;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
     }
 
  .productos{
@@ -45,6 +61,7 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
  }
 article{
     width: 100%;
@@ -64,14 +81,18 @@ article img{
     justify-content: space-evenly;
     text-align:center;
     /*background-color: black;*/
-    color: white;
+    color: darksalmon;
+    height: 50%;
 }
 
+
 .tituloProducto{
-    background-color: grey;
+    background-color: rgb(88, 87, 87);
+    color: darksalmon;
     text-align: center;
     width: 100%;
     padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 .masInfo{
@@ -79,8 +100,14 @@ article img{
     padding: 10px 10px;
     margin-top: 20px;
     align-self: center;
+    border-color:darksalmon ;
+    color: darksalmon;
+    background-color: black;
 }
 
 .nombreProducto, .descripcion, .presentacion{
     margin-top:20px ;
+}
+.descripcion{
+    color: white;
 }
