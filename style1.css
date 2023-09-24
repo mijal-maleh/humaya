@@ -48,7 +48,7 @@ ul {
 }
 /*****************************************************************/
 .principal{
-    margin:20px 30px;
+    margin:0px 40px 60px;
     display: flex;
     flex-direction: column;
     color: white;
