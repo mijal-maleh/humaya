@@ -5,20 +5,39 @@
     
 }
 .body{
-    background-image:url(IMAGENES/Central/imagenCentral.png);
+    background-image:url(IMAGENES/Central/imagenCentral.jpg);
     background-size:cover;
-    padding: 30px;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    /*padding: 20px 30px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .body p{
     margin-bottom: 10px;
 }
+.bsd{
+    margin-bottom: 10px;
+    font-size: 5px;
+    color: darksalmon; 
+}
+header{
+    background-color:white;
+    opacity:30%;
+    height: 80px;
+}
+
 .header-cel{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-}
+    margin:20px;
+ }
+    
 .menu-hamburguer{
-    color: darksalmon;
+    color: rgb(236, 123, 85);
     font-size: larger;
     font-weight: bold;
     margin-top: 10px;
@@ -27,8 +46,9 @@
 ul {
     display: none;
 }
+/*****************************************************************/
 .principal{
-    padding-top: 30px;
+    margin:20px 30px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -52,7 +72,6 @@ ul {
         color: white;
         font-size: medium;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
     }
 
  .productos{
@@ -63,19 +82,25 @@ ul {
     width: 100%;
     height: 100%;
  }
-article{
+
+article, .articulo-destacado{
     width: 100%;
+    height: 100vh;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column-reverse;
     background-color: black;
+    border-bottom: 5px solid darksalmon;
+
 }
-article img{
+
+
+article img {
     width: 100%;
-    height: 50%;
+   /* height: 50%;*/
  
 }
-.detallesProducto{
+.detallesProducto, .detallesProductoDestacado{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -105,9 +130,27 @@ article img{
     background-color: black;
 }
 
-.nombreProducto, .descripcion, .presentacion{
+.nombreProducto, .descripcion, .presentacion, .nombreProductoDestacado, .descripcionDestacado, .presentacionDestacado{
     margin-top:20px ;
 }
-.descripcion{
+.descripcion, .descripcionDestacado{
     color: white;
+}
+.presentacion, .presentacionDestacado{
+    font-weight: bold;
+}
+
+/*solo para producto destacado alfajores de maicena*/
+
+.articulo-destacado{
+    background-color:  rgb(171, 146, 106);
+    align-items: center;
+}
+.nombreProductoDestacado, .presentacionDestacado{
+    color: rgb(106, 84, 50) ;
+}
+.imagenProductoDestacado{
+    width: 70%;
+    /*height: 50%;*/
+    margin-top: 30px;
 }
