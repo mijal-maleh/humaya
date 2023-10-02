@@ -23,9 +23,9 @@
     font-size: 5px;
     color: darksalmon; 
 }
-header{
+header{/*
     background-color:white;
-    opacity:30%;
+    opacity:30%;*/
     height: 80px;
 }
 
@@ -33,12 +33,16 @@ header{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin:20px;
+    margin:10px;
  }
+ /* como cambiar color y ajustar tamano al logo?
+ .header-cel img{
+    color: darksalmon;
+ }*/
     
 .menu-hamburguer{
-    color: rgb(236, 123, 85);
-    font-size: larger;
+    color:/*black;rosybrown;*/ white;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -48,7 +52,7 @@ ul {
 }
 /*****************************************************************/
 .principal{
-    margin:0px 40px 60px;
+    margin:0px 40px 80px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -62,7 +66,8 @@ ul {
         margin-bottom: 20px;
     }
     .principal button{
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
+        margin-top: 30px;
         width: max-content;
         padding: 15px 20px;
         align-self:center; /*flex-end para dekstop;*/
@@ -86,7 +91,7 @@ ul {
 article, .articulo-destacado{
     width: 100%;
     height: 100vh;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     display: flex;
     flex-direction: column-reverse;
     background-color: black;
@@ -97,8 +102,7 @@ article, .articulo-destacado{
 
 article img {
     width: 100%;
-   /* height: 50%;*/
- 
+/*   height:100%;*/
 }
 .detallesProducto, .detallesProductoDestacado{
     display: flex;
@@ -118,12 +122,14 @@ article img {
     width: 100%;
     padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    border-bottom: 5px solid darksalmon;
 }
 
 .masInfo{
     width: max-content;
     padding: 10px 10px;
     margin-top: 20px;
+    margin-bottom: 10px;
     align-self: center;
     border-color:darksalmon ;
     color: darksalmon;
@@ -145,6 +151,7 @@ article img {
 .articulo-destacado{
     background-color:  rgb(171, 146, 106);
     align-items: center;
+    
 }
 .nombreProductoDestacado, .presentacionDestacado{
     color: rgb(106, 84, 50) ;
@@ -153,4 +160,67 @@ article img {
     width: 70%;
     /*height: 50%;*/
     margin-top: 30px;
+}
+
+/****************************************/
+
+@media(min-width:480px){
+    header{
+        background-color:transparent;
+    
+    }
+    .header-cel{
+        display: none;
+    }
+    ul{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    
+    li{
+     list-style: none;   
+    }
+    a{
+        text-decoration-line: none;
+        color: white;
+    }
+     }
+    @media(min-width:769px){ 
+    .principal{
+        align-self: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+         max-width:40%;  
+        padding-bottom: 20px;
+    }
+article, .articulo-destacado{
+    flex-direction: row;
+    height: 50%;
+}
+
+.articuloImpar, .articulo-destacado{
+flex-direction: row-reverse;
+}
+article img {
+    width: 50%;
+    height: 100%;
+ 
+}
+.detallesProducto{
+    width: 50%;
+    /*height: auto;*/
+}
+
+.imagenProductoDestacado{
+    width: 80%;
+    text-align: center;
+    margin-bottom:30px;
+    margin-right: 0%;
+     }
+     .detallesProductoDestacado{
+        text-align: center;
+        padding-right: 70px;
+     }
+    
 }
