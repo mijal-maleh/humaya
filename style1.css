@@ -175,15 +175,28 @@ article img {
     ul{
         display:flex;
         flex-direction: row;
-        justify-content:space-evenly;
+        justify-content:center;
+        padding-top: 30px;
     }
     
     li{
      list-style: none;   
+     margin-right: 20px;
     }
+
     a{
         text-decoration-line: none;
         color: white;
+        font-weight: bold;
+    }
+
+    ul :nth-child(1){
+        margin-left: 20px;
+    }
+
+    ul img{
+        position: relative;
+        bottom: 30px; 
     }
      }
     @media(min-width:769px){ 
@@ -222,5 +235,7 @@ article img {
         text-align: center;
         padding-right: 70px;
      }
-    
+ .detallesProducto{
+    align-self: center;
+ }   
 }
