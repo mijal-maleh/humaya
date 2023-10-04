@@ -211,7 +211,10 @@ article, .articulo-destacado{
     flex-direction: row;
     height: 50%;
 }
-
+/*********como selecciono los articulos pares unicamente?********/
+/*.productos :nth-child(){
+    background-color: aquamarine;
+}*/
 .articuloImpar, .articulo-destacado{
 flex-direction: row-reverse;
 }
@@ -239,3 +242,16 @@ article img {
     align-self: center;
  }   
 }
+
+
+
+
+
+
+
+/********corregirrrrr*/
+/*
+imagenes de productios no ocupan el largo completo del article
+imagen de alfajores de maicena se desborda de la cja a medida que la pantalla se agranda
+como seleccionar los articulos pares para cambiarles la direccion 
+el articulo destacado ocupa demasiado espacio
